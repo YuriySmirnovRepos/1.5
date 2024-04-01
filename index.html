@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>KATA ACADEMY || 1.5</title>
+</head>
+<body>
+    <main>
+        <section class="brands">
+            <h2 class="brands__title">Ремонт техники различных брендов</h2>
+
+            <!--** ГЕНЕРИРУЕМЫЙ КОНТЕНТ  -->
+            <ul class="brands__list">
+                <li class="brands__item">
+                    <a class="brands__link" href="">
+                        <img class="brands__logo" src="img/lenovo-logo.png" alt="">
+                        <img class="brands__go" src="img/go.png" alt="">
+                    </a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link brands__link--samsung" href=""></a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link brands__link--apple" href=""></a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link brands__link--bosch" href=""></a>
+                </li>
+                <li class="brands__item">
+                    <a class="brands__link brands__link--hp" href=""></a>
+                </li>
+            </ul>
+            <!-- **************** -->
+            <button class="brands__show-more hidden">Показать все</button>
+        </section>
+
+        <!-- ** Шаблон добавляемой кнопки с брендом -->
+        <template id="brands-item-template">
+            <li class="brands__item">
+                <a class="brands__link" href="">
+                    <img class="brands__logo" src="" alt="">
+                    <img class="brands__go" src="" alt="">
+                </a>
+            </li>
+        </template>
+
+    </main>
+</body>
+</html>
