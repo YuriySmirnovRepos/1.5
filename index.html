@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-
     <!-- ** SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ********** -->
+    <link href="style.css" rel="stylesheet">
 
     <title>KATA ACADEMY || 1.5</title>
 </head>
@@ -17,81 +15,62 @@
     <main>
         <section class="brands">
             <h2 class="brands__title">Ремонт техники различных брендов</h2>
-
-            <ul class="brands__list">
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/lenovo-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/samsung-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/apple-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/bosch-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/hp-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/acer-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/ViewSonic-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/sony-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/lenovo-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/samsung-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-                <li class="brands__item">
-                    <a class="brands__link" href="">
-                        <img class="brands__logo" src="img/apple-logo.png" alt="">
-                        <img class="brands__go" src="img/go.png" alt="">
-                    </a>
-                </li>
-            </ul>
-            
-            <button class="brands__show-more hidden">Показать все</button>
-
-            <div class="swiper">
+                    
+            <div class="brands__my-swiper swiper">
+                <ul class="swiper-wrapper brands__container">
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/lenovo-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/samsung-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/apple-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/ViewSonic-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/bosch-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/hp-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/acer-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a class="brands__link" href="">
+                            <img class="brands__logo" src="img/sony-logo.png" alt="">
+                            <img class="brands__go" src="img/go.png" alt="">
+                        </a>
+                    </li>
+                </ul>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <button class="brands__show-more hidden">Показать все</button>
         </section>
 
         <!-- ** Шаблон добавляемой кнопки с брендом -->
@@ -105,5 +84,7 @@
         </template> -->
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
