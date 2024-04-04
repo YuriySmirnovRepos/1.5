@@ -9,7 +9,8 @@ const swiper = new Swiper(".swiper", {
     },
     breakpoints: {
         360: {
-            enabled: false
+            enabled: false,
+            spaceBetween:0
         }
     }
 });

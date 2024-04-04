@@ -40,6 +40,8 @@ button {
 }
 
 .brands__title {
+    display: inline-block;
+    height:80px;
     margin:0;
     padding:16px;
     background: linear-gradient(45grad, #f8f8f8, #ffffff);
@@ -144,11 +146,19 @@ button {
     .brands__container {
         display: flex;
         flex-wrap: wrap;
-        gap:16px;
+        gap:24px 16px;
     }
 
     .swiper {
         height: unset;
+    }
+
+    .swiper-slide {
+        flex-grow:1; 
+    }
+
+    .brands__my-swiper {
+        padding: 24px;
     }
 
     .brands__my-swiper:after
@@ -156,15 +166,31 @@ button {
         display:none;
     }
 
+    .brands__title{
+        padding-left:24px;
+        height: 56px;
+    }
 
-    .brands__link {
-        width: 224px;
+
+    .swiper-slide {
+        width: 223px;
     }
 
     .brands__show-more {
         display: block;
     }
 
+}
+
+@media  screen and (min-width: 1120px) {
+    .brands__title {
+        padding-left: 32px;
+    }
+
+    .brands__my-swiper {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 @font-face {
