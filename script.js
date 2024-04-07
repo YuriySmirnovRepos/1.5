@@ -1,5 +1,3 @@
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-
 const swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
@@ -8,11 +6,28 @@ const swiper = new Swiper(".swiper", {
       clickable: true,
     },
     breakpoints: {
-        360: {
+        400: {
             enabled: false,
             spaceBetween:0
         }
     }
 });
 
-const pagination = swiper.pagination;
+let hiddenEls768px = document.querySelectorAll('.hidden-768px');
+let hiddenEls1120px = document.querySelectorAll('.hidden-1120px'); 
+
+let showMoreBtn = document.querySelector('button.brands__show-more');
+showMoreBtn.onclick = () => {
+
+    let currentViewportWidth = window.visualViewport.width;
+
+    showMoreBtn.classList.toggle('brands__show-more--rotated');
+
+    hiddenEls1120px.forEach(el => el.classList.toggle('hidden-1120px'));
+
+    if (currentViewportWidth < 1120) {
+        hiddenEls768px.forEach(el => el.classList.toggle('hidden-768px'));
+    }
+
+    showMoreBtn.textContent = hiddenEls768px[0].checkVisibility() ? "Скрыть" : "Показать все";
+}
