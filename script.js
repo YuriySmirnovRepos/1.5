@@ -29,5 +29,5 @@ showMoreBtn.onclick = () => {
         hiddenEls768px.forEach(el => el.classList.toggle('hidden-768px'));
     }
 
-    showMoreBtn.textContent = hiddenEls768px[0].checkVisibility() ? "Скрыть" : "Показать все";
+    showMoreBtn.textContent = hiddenEls1120px[0].checkVisibility() ? "Скрыть" : "Показать все";
 }
