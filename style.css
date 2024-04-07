@@ -181,9 +181,11 @@ button {
         padding:0;
     }
 
+    /*** Переключение свайпера на обычный флекс переопределением стилей wrapper-а. Также, пришлось переопределить инлайновый transform здесь. */
     .swiper-wrapper {
         display: flex;
         flex-wrap: wrap;
+        transform: unset !important;
     }
 
     .swiper {
