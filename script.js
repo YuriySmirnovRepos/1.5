@@ -16,10 +16,10 @@ const swiper = new Swiper(".swiper", {
 let hiddenEls768px = document.querySelectorAll('.hidden-768px');
 let hiddenEls1120px = document.querySelectorAll('.hidden-1120px'); 
 
-let showMoreBtn = document.querySelector('button.brands__show-more');
+const showMoreBtn = document.querySelector('button.brands__show-more');
 showMoreBtn.onclick = () => {
 
-    let currentViewportWidth = window.visualViewport.width;
+    const currentViewportWidth = window.visualViewport.width;
 
     showMoreBtn.classList.toggle('brands__show-more--rotated');
 
